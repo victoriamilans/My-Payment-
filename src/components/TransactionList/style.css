@@ -1,0 +1,54 @@
+section {
+    width: 80%;
+    margin-top: 40px;
+    margin: 0 auto;
+  }
+  
+  .btn--section {
+    width: 100%;  
+  }
+  
+  .btn--section > div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn--section > div > button {
+    width: 75px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #e1e2e2;
+    border: none;
+  }
+  
+  .btn--section > div > button:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  
+  .noCard {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .noCard > img {
+    width: 100%;
+  }
+  
+  @media (max-width: 1200px) {
+    .btn--section  {
+      flex-direction: column;
+    }
+    .btn--section  div {
+      min-width: 100%;
+      justify-content: flex-start;
+      gap: 15px
+    }
+
+    section{
+      max-width: 450px;
+    }
+  }

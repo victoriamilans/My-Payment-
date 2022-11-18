@@ -1,0 +1,49 @@
+ul {
+    padding: 0px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  li > div {
+    border-left: 5px solid rgba(0, 0, 0, 0.068);
+    border-radius: 8px;
+  }
+  
+  li > div > span {
+    margin-left: 20px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+  
+  .card > h3 {
+    margin-left: 10px;
+  }
+  
+  .card--transaction {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+  }
+  
+  .card--transaction > img {
+    height: 10px;
+  }
+  
+  @media (min-width: 1000px) {
+    .card--transaction {
+      width: 15%;
+    }
+  }
+  
