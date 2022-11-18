@@ -1,0 +1,137 @@
+
+.form {
+    width: 90%;
+    height: 500px;
+    max-width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.027);
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .form--description {
+    width: 90%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  
+  .form--description > label {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  
+  .form--description > input {
+    width: 314px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--grey1);
+    font-size: 1rem;
+  }
+  
+  .form--description input:hover {
+    background-color: rgba(5, 0, 0, 0.096);
+  }
+  
+  .form--description > span {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  
+  .form--information {
+    margin-left: 20px;
+    margin-right: 0px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form--value {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form--value > div > input {
+    background-color: var(--grey1);
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  .form--value > input {
+    margin-top: 10px;
+    border: none;
+    width: 128px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  .form--vaueType {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form--vaueType > select {
+    background-color: var(--grey1);
+    border: none;
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .form--value {
+    display: flex;
+  }
+  
+  .form--value > div {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .btn {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 98%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  .btn:hover{
+    background-color: var(--secondary);
+  }
+  
+  @media (min-width: 1000px) {
+    section {
+      max-width: 700px;
+    }
+  
+    .form {
+      margin: 0 auto;
+    }
+  
+    .btn--section {
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .btn--section > div {
+      margin-right: 20px;
+      max-width: 40%;
+    }
+  }
+  
