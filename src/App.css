@@ -54,12 +54,13 @@ body {
   color: var(--grey2);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .root {
     flex-direction: row;
     max-width: 1400px;
     margin: 0 auto;
     margin-top: 100px;
+    width: 100vw;
     justify-content: space-between;
   }
 }

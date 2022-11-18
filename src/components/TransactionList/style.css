@@ -1,12 +1,11 @@
 section {
-    width: 90%;
+    width: 80%;
     margin-top: 40px;
     margin: 0 auto;
   }
   
   .btn--section {
-    width: 100%;
-    align-items: center;
+    width: 100%;  
   }
   
   .btn--section > div {
@@ -39,4 +38,17 @@ section {
     width: 100%;
   }
   
-  
+  @media (max-width: 1200px) {
+    .btn--section  {
+      flex-direction: column;
+    }
+    .btn--section  div {
+      min-width: 100%;
+      justify-content: flex-start;
+      gap: 15px
+    }
+
+    section{
+      max-width: 450px;
+    }
+  }

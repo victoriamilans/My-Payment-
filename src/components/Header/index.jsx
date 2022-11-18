@@ -5,7 +5,7 @@ export function Header({ isLogged }) {
   return (
     <header className="header">
       <nav>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo--home"/>
         <button onClick={isLogged}>Inicio</button>
       </nav>
     </header>

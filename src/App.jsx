@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { Form } from "./components/Form";
+import { Header } from "./components/Header";
+import LandingPage from "./components/LandingPage";
+import { TransationList } from "./components/TransactionList";
+
 
 function App() {
+  const [transactionsList, setTransactionsList] = useState([]);
+  const [isLogged, setLogin] = useState(false);
+  const [filter, setFilter] = useState("");
+
+  const filterTransactions = transactionsList.filter((transaction) =>
+    filter === "" ? true : transaction.type === filter
+  );
+
+  function login() {
+    setLogin(!isLogged);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isLogged ? (
+        <>
+          <Header isLogged={login} />
+          <div className="root">
+            <Form list={filterTransactions} setList={setTransactionsList} />
+            <TransationList
+              list={transactionsList}
+              setList={setTransactionsList}
+            />
+          </div>
+        </>
+      ) : (
+        <LandingPage isLogged={login} />
+      )}
     </div>
   );
 }
-
 export default App;
