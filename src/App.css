@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Nunito", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  max-width: 1400px;
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+  --primary: #01c238;
+  --primary2: #38D764;
+  --secondary: #038d2a;
+  --grey: #212529;
+  --grey3: #868e96;
+  --grey2: #e9ecef;
+  --white: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.title1:root {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--grey4);
+}
+
+.title2:root {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--grey4);
+}
+
+.title3:root {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--grey4);
+}
+
+.title4:root {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: var(--grey4);
+}
+
+.headline:root {
+  font-size: 1rem;
+  color: var(--grey2);
+}
+
+.body:root {
+  font-size: 0.7rem;
+  color: var(--grey2);
+}
+
+@media (min-width: 1000px) {
+  .root {
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: space-between;
   }
 }
