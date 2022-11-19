@@ -14,4 +14,8 @@
 
 Site: <a href="https://react-mypayment.vercel.app/">My Payment Finance </a>
 
+---
 
+<h2> Visualização 👀 </h2>
+<img src="https://user-images.githubusercontent.com/106447484/202868787-39ab397b-47ad-4bf0-8ea5-35b6152e0bea.png"/>
+<img src="https://user-images.githubusercontent.com/106447484/202868807-473255a7-137e-4c46-b3e2-57eab96ad38b.png" />
